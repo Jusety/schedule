@@ -1,12 +1,16 @@
-import { combineReducers, createStore } from 'redux'
-import { devToolsEnhancer } from 'redux-devtools-extension'
+import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit"
+import auth from "./reducers/auth"
+import schedule from "./reducers/schedule"
 
-/* Create root reducer, containing all features of the application */
-const rootReducer = combineReducers({})
+export const store = configureStore({
+    reducer: { auth, schedule },
+})
 
-const store = createStore(
-    rootReducer,
-    /* preloadedState, */ devToolsEnhancer({})
-)
-
-export default store
+export type AppDispatch = typeof store.dispatch
+export type RootState = ReturnType<typeof store.getState>
+export type AppThunk<ReturnType = void> = ThunkAction<
+    ReturnType,
+    RootState,
+    unknown,
+    Action<string>
+>

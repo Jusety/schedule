@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-btn {
+    margin-top: 1.3vh;
+    width: 25vw;
+    font-size: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login-btn {
+    margin-top: 1vh;
+    width: 6vw;
+    font-size: 2vh;
+    position: relative;
+    left: 8%;
+}
+
+.form {
+    max-width: 28vw;
+}
+
+.list {
+    margin-top: 5vh;
+    border: 0.7vh solid rgb(48, 48, 158);
+    padding: 6vh;
+    border-radius: 10vh;
+    font-size: 1.2rem;
+}
+
+.list-element {
+    margin-top: 3vh;
+    margin-left: 3vh;
+}
+
+.week {
+    color: whitesmoke;
+    position: relative;
+    right: 20vh;
+}
+
+@media screen and (max-width: 600px) {
+    .nav-btn {
+        margin-top: 2vh;
+        width: 30vw;
+        font-size: 2.5vh;
+    }
+    #login-btn {
+        border-radius: 0.5vh;
+        height: 2.5vh;
+        width: 4vw;
+        font-size: 2vw;
+        position: relative;
+        left: 15.2%;
+        bottom: 1vh;
+    }
+    .form {
+        max-width: 60vh;
+    }
+    .modal-form {
+        max-width: 40vh;
+    }
+    #modal-btn {
+        width: 20vw;
+        margin-right: 20%;
+    }
+    .list {
+        width: 100%;
+        padding: 6vh;
+        margin-left: 0;
+        font-size: 0.9rem;
+    }
+    .list-element {
+        margin-left: 2vh;
+    }
+}
