@@ -41,7 +41,6 @@
 .week {
     color: whitesmoke;
     position: relative;
-    right: 20vh;
 }
 
 @media screen and (max-width: 600px) {
