@@ -27,13 +27,7 @@ export const mondayLessonsOddCons = [
     },
 ]
 export const mondayLessonsEvenCons = []
-export const tuesdayLessonsOddCons = [
-    {
-        id: 1,
-        aud: "420/3",
-        name: "Kлассный час",
-        professor: "Петрова Г.Н",
-    },
+export const tuesdayLessonsEvenCons = [
     {
         id: 2,
         aud: "",
@@ -53,7 +47,13 @@ export const tuesdayLessonsOddCons = [
         professor: "Петрова Г.Н",
     },
 ]
-export const tuesdayLessonsEvenCons = [
+export const tuesdayLessonsOddCons = [
+    {
+        id: 1,
+        aud: "420/3",
+        name: "Kлассный час",
+        professor: "Петрова Г.Н",
+    },
     {
         id: 2,
         aud: "",
