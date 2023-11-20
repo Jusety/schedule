@@ -11,9 +11,15 @@ interface NavbarProps {}
 
 const Navbar: React.FC<NavbarProps> = () => {
     const dispatch = useAppDispatch()
-    const { isAuth, user } = useAppSelector((state) => state.auth)
+    const { isAuth } = useAppSelector((state) => state.auth)
     const { week } = useAppSelector((state) => state.schedule)
     const navigate = useNavigate()
+
+    const logOut = () => {
+        localStorage.removeItem("auth")
+        localStorage.removeItem("user")
+        location.reload()
+    }
 
     return (
         <Row justify="space-around">
@@ -22,7 +28,9 @@ const Navbar: React.FC<NavbarProps> = () => {
                 RAS-211
             </Button>
             {isAuth ? (
-                <h1 style={{ color: "whitesmoke" }}>{user.username}</h1>
+                <Button className="nav-btn" id="login-btn" onClick={logOut}>
+                    Exit
+                </Button>
             ) : (
                 <Button
                     className="nav-btn"
