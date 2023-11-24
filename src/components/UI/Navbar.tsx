@@ -51,7 +51,7 @@ const Navbar: React.FC<NavbarProps> = () => {
                 РАС-211
             </Button>
             {isAuth ? (
-                <Button className="nav-btn" id="login-btn" onClick={logOut}>
+                <Button id="login-btn" onClick={logOut}>
                     Выйти
                 </Button>
             ) : (

@@ -55,13 +55,14 @@
 @media screen and (max-width: 600px) {
     .nav-btn {
         margin-top: 2vh;
-        width: 20vw;
+        width: 15vw;
     }
     #login-btn {
+        position: relative;
+        left: 20%;
         border-radius: 0.5vh;
         height: 2.5vh;
         width: 6vh;
-        position: relative;
         bottom: 1vh;
     }
     .form {
