@@ -39,6 +39,8 @@
 .week {
     color: whitesmoke;
     display: flex;
+    position: relative;
+    right: 5vh;
 }
 
 .week-btn {
@@ -53,14 +55,13 @@
 @media screen and (max-width: 600px) {
     .nav-btn {
         margin-top: 2vh;
-        width: 30vw;
+        width: 20vw;
     }
     #login-btn {
         border-radius: 0.5vh;
         height: 2.5vh;
         width: 6vh;
         position: relative;
-        left: 14.5%;
         bottom: 1vh;
     }
     .form {
