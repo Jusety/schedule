@@ -3,4 +3,5 @@ export interface ILesson {
     professor: string
     aud: string
     name: string
+    weekLast?: number[]
 }

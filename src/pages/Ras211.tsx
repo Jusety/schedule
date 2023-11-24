@@ -5,7 +5,7 @@ import { useAppSelector } from "../utils/hooks"
 interface RasProps {}
 
 const Ras: React.FC<RasProps> = () => {
-    const { week, EvenArray, OddArray } = useAppSelector(
+    const { week, EvenArray, OddArray, error } = useAppSelector(
         (state) => state.schedule
     )
 
@@ -20,7 +20,12 @@ const Ras: React.FC<RasProps> = () => {
             <Timetable key={index} day={odd.day} lessons={odd.lessons} />
         ))
     }
-    return <div>{result}</div>
+    return (
+        <div style={{ marginTop: "10vh" }}>
+            {error && <h1 style={{ color: "red" }}>Error:{error}</h1>}
+            {result}
+        </div>
+    )
 }
 
 export default Ras

@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit"
+import { createSlice, PayloadAction } from "@reduxjs/toolkit"
 import { ILesson } from "../../models/lesson"
 import {
     fridayLessonsEvenCons,
@@ -16,7 +16,7 @@ import {
 } from "../../utils/consts"
 
 const initialState: IscheduleState = {
-    week: 13,
+    week: 0,
     time: timeCons,
     mondayLessonsOdd: mondayLessonsOddCons,
     mondayLessonsEven: mondayLessonsEvenCons,
@@ -46,6 +46,8 @@ const initialState: IscheduleState = {
         { day: "Пятница", lessons: fridayLessonsEvenCons },
         { day: "Суббота", lessons: saturdayLessonsEvenCons },
     ],
+    error: null,
+    isLoading: false,
 }
 
 interface IscheduleState {
@@ -65,12 +67,24 @@ interface IscheduleState {
     saturdayLessonsEven: ILesson[]
     OddArray: any[]
     EvenArray: any[]
+    error: null | string
+    isLoading: boolean
 }
 
 export const scheduleSlicer = createSlice({
     name: "schedule",
     initialState,
-    reducers: {},
+    reducers: {
+        setWeek(state, action: PayloadAction<number>) {
+            state.week = action.payload
+        },
+        setIsLoading(state, action: PayloadAction<boolean>) {
+            state.isLoading = action.payload
+        },
+        setError(state, action: PayloadAction<string>) {
+            state.error = action.payload
+        },
+    },
 })
 
 export default scheduleSlicer.reducer

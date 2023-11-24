@@ -38,7 +38,16 @@
 
 .week {
     color: whitesmoke;
-    position: relative;
+    display: flex;
+}
+
+.week-btn {
+    width: 4vh;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
 }
 
 @media screen and (max-width: 600px) {
@@ -51,7 +60,7 @@
         height: 2.5vh;
         width: 6vh;
         position: relative;
-        left: 17%;
+        left: 14.5%;
         bottom: 1vh;
     }
     .form {
@@ -62,7 +71,8 @@
     }
     #modal-btn {
         width: 20vw;
-        margin-right: 20%;
+        position: relative;
+        left: -2.5%;
     }
     .list {
         width: 100%;

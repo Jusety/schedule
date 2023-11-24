@@ -29,10 +29,13 @@ const LoginForm: React.FC<LoginFormProps> = () => {
         >
             {error && <h1 style={{ color: "red" }}>Error:{error}</h1>}
             <Form.Item
-                label="Username"
+                label="Логин"
                 name="username"
                 rules={[
-                    { required: true, message: "Please input your username!" },
+                    {
+                        required: true,
+                        message: "Пожалуйста, впишите ваш логин!",
+                    },
                 ]}
             >
                 <Input
@@ -41,10 +44,13 @@ const LoginForm: React.FC<LoginFormProps> = () => {
                 />
             </Form.Item>
             <Form.Item
-                label="Password"
+                label="Пароль"
                 name="password"
                 rules={[
-                    { required: true, message: "Please input your password!" },
+                    {
+                        required: true,
+                        message: "Пожалуйста, впишите ваш пароль!",
+                    },
                 ]}
             >
                 <Input.Password
@@ -59,7 +65,7 @@ const LoginForm: React.FC<LoginFormProps> = () => {
                     loading={isLoading}
                     id="modal-btn"
                 >
-                    LOG IN
+                    Войти
                 </Button>
             </Form.Item>
         </Form>

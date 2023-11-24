@@ -8,7 +8,7 @@ interface TimetableProps {
 }
 
 const Timetable: React.FC<TimetableProps> = ({ day, lessons }) => {
-    const { time } = useAppSelector((state) => state.schedule)
+    const { time, week } = useAppSelector((state) => state.schedule)
 
     let i = 0
     return (
@@ -19,10 +19,25 @@ const Timetable: React.FC<TimetableProps> = ({ day, lessons }) => {
                     if (lessons[i]?.id === index + 1) {
                         return (
                             <li key={index} className="list-element">
-                                <span>{table}</span> -{" "}
+                                <span>{table}</span>
                                 <span>
-                                    {lessons[i].name}:{lessons[i].professor}(
-                                    {lessons[i].aud})
+                                    {lessons[i]?.weekLast !== undefined &&
+                                        lessons[i]?.weekLast?.includes(week) &&
+                                        " - " +
+                                            lessons[i].name +
+                                            ":" +
+                                            lessons[i].professor +
+                                            "(" +
+                                            lessons[i].aud +
+                                            ")"}
+                                    {lessons[i]?.weekLast === undefined &&
+                                        " - " +
+                                            lessons[i].name +
+                                            ":" +
+                                            lessons[i].professor +
+                                            "(" +
+                                            lessons[i].aud +
+                                            ")"}
                                 </span>
                                 <span style={{ display: "none" }}>{i++}</span>
                             </li>

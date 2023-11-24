@@ -1,3 +1,5 @@
+import { ILesson } from "../models/lesson"
+
 export enum Paths {
     RAS211 = "/",
     MMR211 = "/mmr211",
@@ -12,7 +14,7 @@ export const timeCons = [
     "17:35-19:10",
 ]
 
-export const mondayLessonsOddCons = [
+export const mondayLessonsOddCons: ILesson[] = [
     {
         id: 3,
         aud: "7/3",
@@ -26,8 +28,8 @@ export const mondayLessonsOddCons = [
         professor: "Надеева И.А",
     },
 ]
-export const mondayLessonsEvenCons = []
-export const tuesdayLessonsEvenCons = [
+export const mondayLessonsEvenCons: ILesson[] = []
+export const tuesdayLessonsEvenCons: ILesson[] = [
     {
         id: 2,
         aud: "",
@@ -47,7 +49,7 @@ export const tuesdayLessonsEvenCons = [
         professor: "Петрова Г.Н",
     },
 ]
-export const tuesdayLessonsOddCons = [
+export const tuesdayLessonsOddCons: ILesson[] = [
     {
         id: 1,
         aud: "420/3",
@@ -79,7 +81,7 @@ export const tuesdayLessonsOddCons = [
         professor: "Кречетова О.Г",
     },
 ]
-export const wednsdayLessonsEvenCons = [
+export const wednsdayLessonsEvenCons: ILesson[] = [
     {
         id: 1,
         aud: "2/3",
@@ -105,15 +107,15 @@ export const wednsdayLessonsEvenCons = [
         professor: "Лесных О.В",
     },
 ]
-export const thursdayLessonsOddCons = [
+export const thursdayLessonsOddCons: ILesson[] = [
     {
         id: 4,
         aud: "2/3",
-        name: "(л) Электрорадиоизмерения ",
+        name: "(л) Электрорадиоизмерения",
         professor: "Илларионов А.Г",
     },
 ]
-export const thursdayLessonsEvenCons = [
+export const thursdayLessonsEvenCons: ILesson[] = [
     {
         id: 2,
         aud: "401а/3",
@@ -132,8 +134,23 @@ export const thursdayLessonsEvenCons = [
         name: "(пр) Электронная техника",
         professor: "Денисов Д.А",
     },
+    {
+        id: 5,
+        aud: "210/3",
+        name: "(л.р.) Электронная техника",
+        professor: "Денисов Д.А",
+        weekLast: [2, 6, 10, 14],
+    },
+    {
+        id: 6,
+        aud: "210/3",
+        name: "(л.р.) Электронная техника",
+        professor: "Денисов Д.А",
+        weekLast: [2, 6, 10, 14],
+    },
 ]
-export const fridayLessonsOddCons = [
+
+export const fridayLessonsOddCons: ILesson[] = [
     {
         id: 2,
         aud: "309/3",
@@ -153,7 +170,7 @@ export const fridayLessonsOddCons = [
         professor: "Петрова Г.Н",
     },
 ]
-export const fridayLessonsEvenCons = [
+export const fridayLessonsEvenCons: ILesson[] = [
     {
         id: 1,
         aud: "7/3",
@@ -166,8 +183,23 @@ export const fridayLessonsEvenCons = [
         name: "(пр) Компьютерная графика",
         professor: "Надеева И.А",
     },
+    {
+        id: 3,
+        aud: "101/3",
+        name: "(л.р.) Вычислительная техника",
+        professor: "Полухин А.К",
+        weekLast: [2, 6, 10, 14],
+    },
+    {
+        id: 4,
+        aud: "101/3",
+        name: "(л.р.) Вычислительная техника",
+        professor: "Полухин А.К",
+        weekLast: [2, 6, 10, 14],
+    },
 ]
-export const saturdayLessonsOddCons = [
+
+export const saturdayLessonsOddCons: ILesson[] = [
     {
         id: 1,
         aud: "309/3",
@@ -181,7 +213,7 @@ export const saturdayLessonsOddCons = [
         professor: "Кречетова О.Г",
     },
 ]
-export const saturdayLessonsEvenCons = [
+export const saturdayLessonsEvenCons: ILesson[] = [
     {
         id: 1,
         aud: "3/3",

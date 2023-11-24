@@ -6,6 +6,7 @@ import { Paths } from "../../utils/consts"
 import LoginModal from "./modal/LoginModal"
 import { useAppDispatch, useAppSelector } from "../../utils/hooks"
 import { authSlicer } from "../../reducers/auth"
+import { scheduleSlicer } from "../../reducers/schedule"
 
 interface NavbarProps {}
 
@@ -21,15 +22,37 @@ const Navbar: React.FC<NavbarProps> = () => {
         location.reload()
     }
 
+    const weekChangeHandler = (num: number) => {
+        dispatch(scheduleSlicer.actions.setWeek(week + num))
+    }
+
     return (
         <Row justify="space-around">
-            <h3 className="week">Неделя: {week}</h3>
+            <h3 className="week">
+                <div>
+                    <Button
+                        onClick={() => weekChangeHandler(-1)}
+                        size="small"
+                        className="week-btn"
+                    >
+                        -
+                    </Button>
+                    <Button
+                        onClick={() => weekChangeHandler(1)}
+                        size="small"
+                        className="week-btn"
+                    >
+                        +
+                    </Button>
+                </div>
+                <span style={{ marginLeft: "1vh" }}> Неделя: {week}</span>
+            </h3>
             <Button className="nav-btn" onClick={() => navigate(Paths.RAS211)}>
-                RAS-211
+                РАС-211
             </Button>
             {isAuth ? (
                 <Button className="nav-btn" id="login-btn" onClick={logOut}>
-                    Exit
+                    Выйти
                 </Button>
             ) : (
                 <Button
@@ -39,7 +62,7 @@ const Navbar: React.FC<NavbarProps> = () => {
                         dispatch(authSlicer.actions.setIsModalLoginOpen(true))
                     }
                 >
-                    Log in
+                    Войти
                 </Button>
             )}
             <LoginModal />

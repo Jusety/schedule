@@ -6,6 +6,7 @@ import Navbar from "./components/UI/Navbar"
 import { useAppDispatch } from "./utils/hooks"
 import { authSlicer } from "./reducers/auth"
 import { IUser } from "./models/user"
+import { weekInit } from "./reducers/schedule/weekInit"
 
 const App: React.FC = () => {
     const dispatch = useAppDispatch()
@@ -21,11 +22,17 @@ const App: React.FC = () => {
         }
     }, [dispatch])
 
+    useEffect(() => {
+        dispatch(weekInit())
+    }, [])
+
     return (
         <Layout>
-            <Layout.Header>
-                <Navbar />
-            </Layout.Header>
+            <div className="navbar">
+                <Layout.Header>
+                    <Navbar />
+                </Layout.Header>
+            </div>
             <Layout.Content>
                 <AppRouter />
             </Layout.Content>
