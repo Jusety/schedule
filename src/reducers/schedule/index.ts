@@ -13,6 +13,7 @@ import {
     tuesdayLessonsEvenCons,
     tuesdayLessonsOddCons,
     wednsdayLessonsEvenCons,
+    wednsdayLessonsOddCons,
 } from "../../utils/consts"
 
 const initialState: IscheduleState = {
@@ -23,7 +24,7 @@ const initialState: IscheduleState = {
     tuesdayLessonsOdd: tuesdayLessonsOddCons,
     tuesdayLessonsEven: tuesdayLessonsEvenCons,
     wednsdayLessonsEven: wednsdayLessonsEvenCons,
-    wednsdayLessonsOdd: wednsdayLessonsEvenCons,
+    wednsdayLessonsOdd: wednsdayLessonsOddCons,
     thursdayLessonsOdd: thursdayLessonsOddCons,
     thursdayLessonsEven: thursdayLessonsEvenCons,
     fridayLessonsEven: fridayLessonsEvenCons,

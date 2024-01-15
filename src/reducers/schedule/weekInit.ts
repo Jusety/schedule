@@ -23,7 +23,7 @@ export const weekInit = () => async (dispatch: Dispatch) => {
         }
         let weekNumber = new Date().getWeek()
 
-        dispatch(scheduleSlicer.actions.setWeek(weekNumber - 34))
+        dispatch(scheduleSlicer.actions.setWeek(weekNumber + 18))
     } catch (error: any) {
         dispatch(scheduleSlicer.actions.setError(error))
     } finally {
