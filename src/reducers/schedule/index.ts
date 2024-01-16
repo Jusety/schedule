@@ -34,7 +34,7 @@ const initialState: IscheduleState = {
     OddArray: [
         { day: "Понедельник", lessons: mondayLessonsOddCons },
         { day: "Вторник", lessons: tuesdayLessonsOddCons },
-        { day: "Среда", lessons: wednsdayLessonsEvenCons },
+        { day: "Среда", lessons: wednsdayLessonsOddCons },
         { day: "Четверг", lessons: thursdayLessonsOddCons },
         { day: "Пятница", lessons: fridayLessonsOddCons },
         { day: "Суббота", lessons: saturdayLessonsOddCons },
