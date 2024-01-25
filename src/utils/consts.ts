@@ -33,7 +33,7 @@ export const mondayLessonsEvenCons: ILesson[] = [
         id: 1,
         aud: "113/3",
         name: "Системы автоматизированного производства (Лекционные занятия)",
-        professor: "БКондаурова Е.В.",
+        professor: "Кондаурова Е.В.",
     },
     {
         id: 2,
@@ -51,7 +51,7 @@ export const tuesdayLessonsOddCons: ILesson[] = [
     },
     {
         id: 2,
-        aud: "206/3",
+        aud: "1/3",
         name: "Конструирование радиоэлектронной аппаратуры (Лекционные занятия)",
         professor: "Костюков А.С.",
     },
@@ -77,9 +77,9 @@ export const tuesdayLessonsOddCons: ILesson[] = [
 export const tuesdayLessonsEvenCons: ILesson[] = [
     {
         id: 2,
-        aud: "206/3",
-        name: "Конструирование радиоэлектронной аппаратуры (Лекционные занятия)",
-        professor: "Костюков А.С.",
+        aud: "309/3",
+        name: "Иностранный язык (Практические занятия)",
+        professor: "Аленькова Н.В.",
     },
     {
         id: 3,
@@ -92,6 +92,12 @@ export const tuesdayLessonsEvenCons: ILesson[] = [
         aud: "1/3",
         name: "Технология настройки и регулировки радиоприемных устройств (Лекционные занятия)",
         professor: "Денисов Д.А.",
+    },
+    {
+        id: 5,
+        aud: "322/3",
+        name: "Конструирование радиоэлектронной аппаратуры (Лекционные занятия)",
+        professor: "Костюков А.С.",
     },
 ]
 export const wednsdayLessonsOddCons: ILesson[] = [
@@ -115,24 +121,18 @@ export const wednsdayLessonsOddCons: ILesson[] = [
     },
     {
         id: 4,
-        aud: "324/3",
+        aud: "210/3",
         name: "Технология настройки и регулировки радиоприемных устройств (Лабораторные занятия)",
         professor: "Денисов Д.А.",
     },
     {
         id: 5,
-        aud: "325/3",
+        aud: "210/3",
         name: "Технология настройки и регулировки радиоприемных устройств (Практические занятия)",
         professor: "Денисов Д.А.",
     },
 ]
 export const wednsdayLessonsEvenCons: ILesson[] = [
-    {
-        id: 1,
-        aud: "1/3",
-        name: "Технология настройки и регулировки радиопередающих и антенно-фидерных устройств (Практические занятия)",
-        professor: "Кречетова О.Г.",
-    },
     {
         id: 2,
         aud: "401а/3",
@@ -140,22 +140,16 @@ export const wednsdayLessonsEvenCons: ILesson[] = [
         professor: "Ржавская Т.Ю.",
     },
     {
-        id: 4,
-        aud: "401в/3",
-        name: "??Иностранный язык (Практические занятия)",
-        professor: "Прибыткова О.В.",
-    },
-    {
-        id: 5,
-        aud: "401в/3",
-        name: "??Иностранный язык (Практические занятия)",
-        professor: "Прибыткова О.В.",
+        id: 3,
+        aud: "137/3",
+        name: "Кураторский час (Кураторский час)",
+        professor: "Петрова Г.Н.",
     },
 ]
 export const thursdayLessonsOddCons: ILesson[] = [
     {
         id: 1,
-        aud: "401в/3",
+        aud: "309/3",
         name: "Иностранный язык (Практические занятия)",
         professor: "Аленькова Н.В.",
     },
@@ -194,6 +188,12 @@ export const thursdayLessonsEvenCons: ILesson[] = [
 ]
 
 export const fridayLessonsOddCons: ILesson[] = [
+    {
+        id: 1,
+        aud: "1/3",
+        name: "Технология настройки и регулировки радиопередающих и антенно-фидерных устройств (Практические занятия)",
+        professor: "Кречетова О.Г.",
+    },
     {
         id: 2,
         aud: "401а/3",
@@ -253,12 +253,6 @@ export const saturdayLessonsOddCons: ILesson[] = [
         name: "Технология настройки и регулировки радиопередающих и антенно-фидерных устройств (Практические занятия)",
         professor: "Кречетова О.Г.",
     },
-    {
-        id: 3,
-        aud: "401в/3",
-        name: "Иностранный язык (Практические занятия)",
-        professor: "Аленькова Н.В.",
-    },
 ]
 export const saturdayLessonsEvenCons: ILesson[] = [
     {
@@ -272,11 +266,5 @@ export const saturdayLessonsEvenCons: ILesson[] = [
         aud: "",
         name: "Физическая культура (Практические занятия)",
         professor: "Костюков А.П.",
-    },
-    {
-        id: 3,
-        aud: "401в/3",
-        name: "Иностранный язык (Практические занятия)",
-        professor: "Аленькова Н.В.",
     },
 ]
