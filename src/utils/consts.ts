@@ -27,6 +27,12 @@ export const mondayLessonsOddCons: ILesson[] = [
         name: "Системы автоматизированного производства (Практические занятия)",
         professor: "Кондаурова Е.В.",
     },
+    {
+        id: 3,
+        aud: "",
+        name: "Физическая культура (Практические занятия)",
+        professor: "Костюков А.П.",
+    },
 ]
 export const mondayLessonsEvenCons: ILesson[] = [
     {
@@ -40,6 +46,12 @@ export const mondayLessonsEvenCons: ILesson[] = [
         aud: "1/3",
         name: "Технология настройки и регулировки радиопередающих и антенно-фидерных устройств (Лекционные занятия)",
         professor: "Кречетова О.Г.",
+    },
+    {
+        id: 3,
+        aud: "",
+        name: "Физическая культура (Практические занятия)",
+        professor: "Костюков А.П.",
     },
 ]
 export const tuesdayLessonsOddCons: ILesson[] = [
@@ -179,12 +191,6 @@ export const thursdayLessonsEvenCons: ILesson[] = [
         name: "Технология настройки и регулировки радиоприемных устройств (Курсовое проектирование (СПО))",
         professor: "Денисов Д.А.",
     },
-    {
-        id: 3,
-        aud: "",
-        name: "Физическая культура (Практические занятия)",
-        professor: "Костюков А.П.",
-    },
 ]
 
 export const fridayLessonsOddCons: ILesson[] = [
@@ -260,11 +266,5 @@ export const saturdayLessonsEvenCons: ILesson[] = [
         aud: "206/3",
         name: "Технология настройки и регулировки радиопередающих и антенно-фидерных устройств (Лабораторные занятия)",
         professor: "Кречетова О.Г.",
-    },
-    {
-        id: 2,
-        aud: "",
-        name: "Физическая культура (Практические занятия)",
-        professor: "Костюков А.П.",
     },
 ]
