@@ -31,7 +31,9 @@ const Navbar: React.FC<NavbarProps> = () => {
             <h3 className="week">
                 <div>
                     <Button
-                        onClick={() => weekChangeHandler(-1)}
+                        onClick={() => {
+                            weekChangeHandler(-1)
+                        }}
                         size="small"
                         className="week-btn"
                     >
